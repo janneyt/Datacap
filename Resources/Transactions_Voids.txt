@@ -1,0 +1,14 @@
+<transactions>
+<tran><type>Void</type><amount>30.37</amount><refNo>175</refNo></tran>
+<tran><type>Void</type><amount>58.46</amount><refNo>176</refNo></tran>
+<tran><type>Void</type><amount>67.14</amount><refNo>177</refNo></tran>
+<tran><type>Void</type><amount>65.04</amount><refNo>178</refNo></tran>
+<tran><type>Void</type><amount>74.45</amount><refNo>328</refNo></tran>
+<tran><type>Void</type><amount>81.70</amount><refNo>329</refNo></tran>
+<tran><type>Void</type><amount>89.70</amount><refNo>352</refNo></tran>
+<tran><type>Void</type><amount>94.40</amount><refNo>280</refNo></tran>
+<tran><type>Void</type><amount>44.32</amount><refNo>318</refNo></tran>
+<tran><type>Void</type><amount>93.22</amount><refNo>262</refNo></tran>
+<tran><type>Void</type><amount>81.18</amount><refNo>227</refNo></tran>
+<tran><type>Void</type><amount>68.70</amount><refNo>228</refNo></tran>
+</transactions>
