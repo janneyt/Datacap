@@ -17,11 +17,11 @@ namespace Datacap.Services
 
         public TransactionsService(ITransactionRespository transactionsRepository, IOptions<FilePaths> filePaths, ILogger<TransactionsService> logger, ProcessorService processorService, IConfiguration configuration, FileService fileService)
         {
+            _processorService = processorService;
             _transactionsRepository = transactionsRepository;
             _filePaths = filePaths.Value;
             _filePaths.Initialize(configuration);
             _logger = logger;
-            _processorService = processorService;
             _fileService = fileService;
         }
 
@@ -30,15 +30,25 @@ namespace Datacap.Services
         {
             var allTransactions = _transactionsRepository.GetAllTransactions();
             var groupedTransactions = allTransactions.GroupBy(t => t.ProcessorName);
-
-            var processors = groupedTransactions.Select(group => new ProcessorDTO
+            var processors = groupedTransactions.Select(group =>
             {
-                ProcessorName = group.Key,
-                Transactions = group.ToList()
+                var processor = new ProcessorDTO
+                {
+                    ProcessorName = group.Key,
+                    Transactions = group.ToList()
+                };
+                _processorService.CalculateTotalFee(processor);
+                return processor;
             }).ToList();
-
             return processors;
         }
+        public async Task<List<ProcessorDTO>> GetAllProcessorsAsync()
+        {
+            // Ensure all transactions are processed first
+            await AddAllTransactionsAsync();
+            return GetProcessors();
+        }
+
 
         public void AddTransaction(TransactionDTO transaction)
         {
@@ -49,18 +59,9 @@ namespace Datacap.Services
             }
 
             // Calculate fee
-            var feeCalculator = new FeeCalculator(new List<FeeRuleDTO> { feeRule });
-            transaction.Fee = feeCalculator.CalculateFee(transaction);
-
-            // Calculate rank
-            var processors = GetProcessors(); // You would need to implement this method
-            var rankingService = new ProcessorRankingService();
-            var rankings = rankingService.RankProcessors(processors);
-            var processorRanking = rankings.FirstOrDefault(ranking => ranking.ProcessorName == transaction.ProcessorName);
-            if (processorRanking != null)
-            {
-                transaction.Rank = processorRanking.Rank;
-            }
+            var feeRate = _processorService.GetFeeRate(feeRule, transaction.Amount);
+            var flatFee = _processorService.GetFlatFee(feeRule, transaction.Amount);
+            transaction.Fee = transaction.Amount * feeRate.PercentageRate + flatFee;
 
             _transactionsRepository.AddTransaction(transaction);
         }
@@ -74,6 +75,9 @@ namespace Datacap.Services
             var settings = new XmlReaderSettings { Async = true };
             using var reader = XmlReader.Create(stream, settings);
 
+            // Get all processors
+            var processors = _processorService.GetDefaultProcessors();
+
             // Read and process the XML nodes
             while (await reader.ReadAsync())
             {
@@ -83,32 +87,46 @@ namespace Datacap.Services
                     // Load the "tran" element directly into an XElement
                     var xml = XElement.Load(reader.ReadSubtree());
 
-                    // Create a transaction from the XML data
-                    var transaction = new TransactionDTO
+                    foreach (var processorName in processors)
                     {
-                        TransactionID = int.Parse(xml.Element("refNo").Value),
-                        Amount = decimal.Parse(xml.Element("amount").Value),
-                        TransactionType = new TransactionTypeDTO
+                        // Create a transaction for each processor from the XML data
+                        var transaction = new TransactionDTO
                         {
-                            TypeName = xml.Element("type").Value
-                        },
-                        ProcessorName = "TSYS",
-                        Rank = 1,
-                        Fee = 1,
-                    };
+                            TransactionID = int.Parse(xml.Element("refNo").Value),
+                            Amount = decimal.Parse(xml.Element("amount").Value),
+                            TransactionType = new TransactionTypeDTO
+                            {
+                                TypeName = xml.Element("type").Value
+                            },
+                            ProcessorName = processorName, // use the name of the processor in the loop
+                            Rank = 0,  // Assign a default rank of 0
+                            Fee = 1,
+                        };
 
-                    // Add the transaction
-                    AddTransaction(transaction);
-                    transactions.Add(transaction);
+                        // Add the transaction
+                        AddTransaction(transaction);
+                        transactions.Add(transaction);
+                    }
+                }
+            }
+
+            // Calculate rank after all transactions have been added
+            var processorDtos = GetProcessors();
+            var rankingService = new ProcessorRankingService();
+            var rankings = rankingService.RankProcessors(processorDtos);
+
+            // Update the rank of each transaction
+            foreach (var transaction in transactions)
+            {
+                var processorRanking = rankings.FirstOrDefault(ranking => ranking.ProcessorName == transaction.ProcessorName);
+                if (processorRanking != null)
+                {
+                    transaction.Rank = processorRanking.Rank;
                 }
             }
 
             return transactions;
         }
-
-
-
-
 
 
 

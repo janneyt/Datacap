@@ -27,28 +27,29 @@ var defaultFeeRules = new List<FeeRuleDTO>
     new FeeRuleDTO
     {
         ProcessorName = "TSYS",
-        LowerBound = 0,
-        UpperBound = 50,
-        LowerRateDetails = new RateDTO { FlatRate = 0.10m, PercentageRate = 0.01m },
-        UpperRateDetails = new RateDTO { FlatRate = 0.10m, PercentageRate = 0.02m }
+        SmallTransactionRate = new RateDTO { FlatRate = 0.10m, PercentageRate = 0.01m },
+        SmallTransactionFlatFee = 0.10m,
+        LargeTransactionRate = new RateDTO { FlatRate = 0.10m, PercentageRate = 0.02m },
+        LargeTransactionFlatFee = 0.10m
     },
     new FeeRuleDTO
     {
         ProcessorName = "First Data",
-        LowerBound = 0,
-        UpperBound = 50,
-        LowerRateDetails = new RateDTO { FlatRate = 0.08m, PercentageRate = 0.0125m },
-        UpperRateDetails = new RateDTO { FlatRate = 0.90m, PercentageRate = 0.01m }
+        SmallTransactionRate = new RateDTO { FlatRate = 0.08m, PercentageRate = 0.0125m },
+        SmallTransactionFlatFee = 0.08m,
+        LargeTransactionRate = new RateDTO { FlatRate = 0.90m, PercentageRate = 0.01m },
+        LargeTransactionFlatFee = 0.90m
     },
     new FeeRuleDTO
     {
         ProcessorName = "EVO",
-        LowerBound = 0,
-        UpperBound = 50,
-        LowerRateDetails = new RateDTO { FlatRate = 0.09m, PercentageRate = 0.011m },
-        UpperRateDetails = new RateDTO { FlatRate = 0.20m, PercentageRate = 0.015m }
+        SmallTransactionRate = new RateDTO { FlatRate = 0.09m, PercentageRate = 0.011m },
+        SmallTransactionFlatFee = 0.09m,
+        LargeTransactionRate = new RateDTO { FlatRate = 0.20m, PercentageRate = 0.015m },
+        LargeTransactionFlatFee = 0.20m
     }
 };
+
 builder.Services.AddSingleton<FileService>();
 
 

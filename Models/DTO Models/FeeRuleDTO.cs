@@ -3,10 +3,10 @@
     public class FeeRuleDTO
     {
         public string ProcessorName { get; set; }
-        public decimal LowerBound { get; set; }
-        public decimal UpperBound { get; set; }
-        public RateDTO LowerRateDetails { get; set; }
-        public RateDTO UpperRateDetails { get; set; }
+        public RateDTO SmallTransactionRate { get; set; }
+        public decimal SmallTransactionFlatFee { get; set; }
+        public RateDTO LargeTransactionRate { get; set; }
+        public decimal LargeTransactionFlatFee { get; set; }
     }
 }
 

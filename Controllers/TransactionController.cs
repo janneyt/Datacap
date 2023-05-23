@@ -29,25 +29,26 @@ namespace Datacap.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            _logger.LogInformation("Getting all transaction controller");
+            _logger.LogInformation("Getting all processors controller");
+            var processors = await _transactionsService.GetAllProcessorsAsync();
 
-            // Call the AddAllTransactionsAsync method and get the transactions
-            var transactions = await _transactionsService.AddAllTransactionsAsync();
-
-            // Convert the transactions to your response model
-            var responses = transactions.Select(t => new TransactionResponse
+            var responses = processors.Select(p => new ProcessorResponse
             {
-                Type = t.TransactionType.TypeName,
-                Rank = t.Rank,
-                RefNo = t.TransactionID,
-                Amount = t.Amount
-            }).ToList();
+                Name = p.ProcessorName,
+                TotalFee = p.TotalFee,
+            }).OrderByDescending(r => r.TotalFee).ThenBy(r => r.Name).ToList();
+
+            // Rank processors based on total fee
+            int rank = 1;
+            for (int i = 0; i < responses.Count(); i++)
+            {
+                responses[i].Rank = rank++;
+            }
 
             string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
-
+            Console.WriteLine($"jsonResponse {jsonResponse}");
             return Content(jsonResponse, "application/json");
         }
-
     }
 }
 

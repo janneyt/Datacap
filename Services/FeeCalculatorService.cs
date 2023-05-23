@@ -1,27 +1,22 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using Datacap.Models.DTO_Models;
 using Datacap.Models;
-using Datacap.Models.DTO_Models;
 
-namespace Datacap.Services
+public class FeeCalculator
 {
-    public class FeeCalculator
+    private List<FeeRuleDTO> FeeRules;
+
+    public FeeCalculator(List<FeeRuleDTO> feeRules)
     {
-        private List<FeeRuleDTO> FeeRules;
+        this.FeeRules = feeRules;
+    }
 
-        public FeeCalculator(List<FeeRuleDTO> feeRules)
-        {
-            this.FeeRules = feeRules;
-        }
+    public decimal CalculateFee(TransactionDTO transaction)
+    {
+        var rule = FeeRules.First(r => r.ProcessorName == transaction.ProcessorName);
 
-        public decimal CalculateFee(TransactionDTO transaction)
-        {
-            var rule = FeeRules.First(r => r.ProcessorName == transaction.ProcessorName);
+        var rate = transaction.Amount < 50 ? rule.SmallTransactionRate : rule.LargeTransactionRate;
+        var flatFee = transaction.Amount < 50 ? rule.SmallTransactionFlatFee : rule.LargeTransactionFlatFee;
 
-            var rate = transaction.Amount < rule.UpperBound ? rule.LowerRateDetails : rule.UpperRateDetails;
-
-            return transaction.Amount * rate.PercentageRate + rate.FlatRate;
-        }
+        return transaction.Amount * rate.PercentageRate + flatFee;
     }
 }
-
