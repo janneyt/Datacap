@@ -3,6 +3,9 @@ using Datacap.Services;
 using Microsoft.Extensions.Options;
 using Datacap.Models;
 using Microsoft.Extensions.Logging;
+using Datacap.Models.DTO_Models;
+using Newtonsoft.Json;
+using Castle.Core.Logging;
 
 namespace Datacap.Controllers
 {
@@ -21,13 +24,26 @@ namespace Datacap.Controllers
             _logger = logger;
         }
 
-        // GET: api/<TransactionController>
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
             _logger.LogInformation("Getting all transaction controller");
-            return new string[] { "value1", "value2" };
+
+            List<TransactionResponse> responses = new List<TransactionResponse>
+            {
+                new TransactionResponse { Type = "Sale", Rank = 1, RefNo = 2, Amount = 10.0 },
+                new TransactionResponse { Type = "Sale", Rank = 2, RefNo = 3, Amount = 20.0 },
+                new TransactionResponse { Type = "Sale", Rank = 3, RefNo = 4, Amount = 15.0 }
+            };
+
+            // Serialize the list of TransactionResponse objects into JSON format
+            string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
+
+            // Return the serialized JSON object as a response
+            return Content(jsonResponse, "application/json");
         }
+
 
         // GET api/<TransactionController>/5
         [HttpGet("{id}")]

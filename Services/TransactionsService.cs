@@ -3,6 +3,7 @@ using Datacap.Models;
 using Datacap.Repositories;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
+using Datacap.Models.DTO_Models;
 
 namespace Datacap.Services
 {
@@ -19,7 +20,7 @@ namespace Datacap.Services
             _logger = logger;
         }
 
-        public List<TransactionDTO> GetTransactions()
+        public List<TransactionResponse> GetTransactions()
         {
             _logger.LogInformation("Getting all transactions");
             // Here you can use _filePaths.Path1 and _filePaths.Path2
