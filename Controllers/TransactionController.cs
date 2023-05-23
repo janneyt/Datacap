@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using Datacap.Models.DTO_Models;
 using Newtonsoft.Json;
 using Castle.Core.Logging;
+using System.Threading.Tasks;
 
 namespace Datacap.Controllers
 {
@@ -26,48 +27,27 @@ namespace Datacap.Controllers
 
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
             _logger.LogInformation("Getting all transaction controller");
 
-            List<TransactionResponse> responses = new List<TransactionResponse>
-            {
-                new TransactionResponse { Type = "Sale", Rank = 1, RefNo = 2, Amount = 10.0 },
-                new TransactionResponse { Type = "Sale", Rank = 2, RefNo = 3, Amount = 20.0 },
-                new TransactionResponse { Type = "Sale", Rank = 3, RefNo = 4, Amount = 15.0 }
-            };
+            // Call the AddAllTransactionsAsync method and get the transactions
+            var transactions = await _transactionsService.AddAllTransactionsAsync();
 
-            // Serialize the list of TransactionResponse objects into JSON format
+            // Convert the transactions to your response model
+            var responses = transactions.Select(t => new TransactionResponse
+            {
+                Type = t.TransactionType.TypeName,
+                Rank = t.Rank,
+                RefNo = t.TransactionID,
+                Amount = t.Amount
+            }).ToList();
+
             string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
 
-            // Return the serialized JSON object as a response
             return Content(jsonResponse, "application/json");
         }
 
-
-        // GET api/<TransactionController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<TransactionController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<TransactionController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<TransactionController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
+

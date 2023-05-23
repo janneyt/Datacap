@@ -5,10 +5,10 @@ namespace Datacap.Models
 {
     public class FilePaths
     {
-        public string Transactions_Sales { get; }
-        public string Transactions_Voids { get; }
+        public string Transactions_Sales { get; set; }
+        public string Transactions_Voids { get; set; }
 
-        public FilePaths(IConfiguration configuration)
+        public void Initialize(IConfiguration configuration)
         {
             var resourcesPath = Path.Combine(configuration.GetValue<string>("AppRootPath"), "Resources");
 
@@ -34,5 +34,3 @@ namespace Datacap.Models
         }
     }
 }
-
-
