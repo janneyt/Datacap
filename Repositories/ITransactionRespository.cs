@@ -10,5 +10,6 @@ namespace Datacap.Repositories
         List<TransactionDTO> GetAllTransactions();
 
         TransactionDTO GetTransaction(int transactionID);
+        void PrintRepository();
     }
 }

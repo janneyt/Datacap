@@ -44,6 +44,11 @@ public class ProcessorService
 
     public bool IsValidProcessorName(string processorName)
     {
+        if (processorName == null)
+        {
+            throw new ArgumentNullException(nameof(processorName), "Processor name cannot be null");
+        }
+
         var validator = new InlineValidator<string>();
         validator.RuleFor(x => x)
             .NotEmpty().WithMessage("Processor name cannot be empty")
@@ -52,6 +57,7 @@ public class ProcessorService
         ValidationResult validationResult = validator.Validate(processorName);
         return validationResult.IsValid;
     }
+
 
 
     public ProcessorDTO GetProcessor(string processorName)

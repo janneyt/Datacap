@@ -30,7 +30,7 @@ namespace Datacap.Controllers
         public async Task<IActionResult> Get()
         {
             _logger.LogInformation("Getting all processors controller");
-            var processors = await _transactionsService.GetAllProcessorsAsync();
+            var processors = await _transactionsService.GetAllProcessorsAsync(false);
 
             var responses = processors.Select(p => new ProcessorResponse
             {
@@ -47,6 +47,32 @@ namespace Datacap.Controllers
 
             string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
             Console.WriteLine($"jsonResponse {jsonResponse}");
+            return Content(jsonResponse, "application/json");
+        }
+
+        [HttpPost("void")]
+        public async Task<IActionResult> Void()
+        {
+            await _transactionsService.ProcessTransactionsAsync(true);
+
+            _logger.LogInformation("Getting all processors after voiding transactions");
+            var processors = await _transactionsService.GetAllProcessorsAsync(true);
+
+            var responses = processors.Select(p => new ProcessorResponse
+            {
+                Name = p.ProcessorName,
+                TotalFee = p.TotalFee,
+            }).OrderByDescending(r => r.TotalFee).ThenBy(r => r.Name).ToList();
+
+            // Rank processors based on total fee
+            int rank = 1;
+            for (int i = 0; i < responses.Count(); i++)
+            {
+                responses[i].Rank = rank++;
+            }
+
+            string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
+            _logger.LogInformation($"jsonResponse after voiding transactions {jsonResponse}");
             return Content(jsonResponse, "application/json");
         }
     }

@@ -4,6 +4,7 @@ using Datacap.Repositories;
 using Microsoft.Extensions.Options;
 using System.Xml.Linq;
 using System.Xml;
+using System.Transactions;
 
 namespace Datacap.Services
 {
@@ -14,8 +15,11 @@ namespace Datacap.Services
         private readonly ILogger<TransactionsService> _logger;
         private readonly ProcessorService _processorService;
         private readonly FileService _fileService;
+        private readonly List<ProcessorDTO> _defaultProcessors;
 
-        public TransactionsService(ITransactionRespository transactionsRepository, IOptions<FilePaths> filePaths, ILogger<TransactionsService> logger, ProcessorService processorService, IConfiguration configuration, FileService fileService)
+        public TransactionsService(ITransactionRespository transactionsRepository, IOptions<FilePaths> filePaths, 
+            ILogger<TransactionsService> logger, ProcessorService processorService, IConfiguration configuration,
+            FileService fileService, List<ProcessorDTO> defaultProcessors)
         {
             // Dependency Injection means these are all created in Program.cs and set to private members here
             _processorService = processorService;
@@ -28,6 +32,8 @@ namespace Datacap.Services
 
             // More correctly, File I/O for the provided files.
             _fileService = fileService;
+
+            _defaultProcessors = defaultProcessors;
         }
 
 
@@ -53,10 +59,10 @@ namespace Datacap.Services
 
             return processors;
         }
-        public async Task<List<ProcessorDTO>> GetAllProcessorsAsync()
+        public async Task<List<ProcessorDTO>> GetAllProcessorsAsync(bool isItVoidTransaction)
         {
             // Ensure all transactions are processed first
-            await AddAllTransactionsAsync();
+            await ProcessTransactionsAsync(isItVoidTransaction);
             return GetProcessors();
         }
 
@@ -83,122 +89,74 @@ namespace Datacap.Services
             _transactionsRepository.AddTransaction(transaction);
         }
 
-        public async Task<List<TransactionDTO>> AddAllTransactionsAsync()
+        // Modify AddTransactionFromXml to accept a processor
+        private void AddTransactionFromXml(XElement transactionXml, ProcessorDTO processor)
         {
-            var transactions = new List<TransactionDTO>();
-
-            // Open the sales file
-            using var stream = _fileService.OpenFile(_filePaths.Transactions_Sales);
-
-            var settings = new XmlReaderSettings { Async = true };
-            using var reader = XmlReader.Create(stream, settings);
-
-            // Get all processors
-            var processors = _processorService.GetDefaultProcessors();
-
-            // Read and process the XML nodes
-            while (await reader.ReadAsync())
+            // Parse the transaction type DTO from the XML
+            var transactionType = new TransactionTypeDTO
             {
-                // Only process "tran" elements
-                if (reader.NodeType == XmlNodeType.Element && reader.Name == "tran")
-                {
-                    // Load the "tran" element directly into an XElement
-                    var xml = XElement.Load(reader.ReadSubtree());
+                TypeName = transactionXml.Element("type").Value,
+                // Handle the TransactionTypeID accordingly, here assuming a default value
+                TransactionTypeID = 1
+            };
 
-                    foreach (var processorName in processors)
-                    {
-                        // Create a transaction for each processor from the XML data
-                        var transaction = new TransactionDTO
-                        {
-                            TransactionID = int.Parse(xml.Element("refNo").Value),
-                            Amount = decimal.Parse(xml.Element("amount").Value),
-                            TransactionType = new TransactionTypeDTO
-                            {
-                                TypeName = xml.Element("type").Value
-                            },
-                            ProcessorName = processorName, // use the name of the processor in the loop
-                            Rank = 0,  // Assign a default rank of 0
-                            Fee = 1,
-                        };
-
-                        // Add the transaction
-                        AddTransaction(transaction);
-                        transactions.Add(transaction);
-                    }
-                }
-            }
-
-            // Calculate rank after all transactions have been added
-            var processorDtos = GetProcessors();
-            var rankingService = new ProcessorRankingService();
-            var rankings = rankingService.RankProcessors(processorDtos);
-
-            // Update the rank of each transaction
-            foreach (var transaction in transactions)
+            // Create a new TransactionDTO from the XElement
+            var transaction = new TransactionDTO
             {
-                var processorRanking = rankings.FirstOrDefault(ranking => ranking.ProcessorName == transaction.ProcessorName);
-                if (processorRanking != null)
-                {
-                    transaction.Rank = processorRanking.Rank;
-                }
-            }
+                TransactionID = int.Parse(transactionXml.Element("refNo").Value),
+                Amount = decimal.Parse(transactionXml.Element("amount").Value),
+                TransactionType = transactionType,
+                ProcessorName = processor.ProcessorName // Assign the ProcessorName to the Transaction
+            };
 
-            return transactions;
+            // Add the new transaction to the processor's transactions
+            processor.Transactions.Add(transaction);
+            _transactionsRepository.AddTransaction(transaction);
         }
-        public async Task VoidTransactionsAsync()
+
+        public async Task ProcessTransactionsAsync(bool isVoidTransaction)
         {
-            // Open the voids file
-            using var stream = _fileService.OpenFile(_filePaths.Transactions_Voids);
-
-            var settings = new XmlReaderSettings { Async = true };
-            using var reader = XmlReader.Create(stream, settings);
-
-            // Read and process the XML nodes
-            while (await reader.ReadAsync())
+            using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
             {
-                // Only process "tran" elements
-                if (reader.NodeType == XmlNodeType.Element && reader.Name == "tran")
+            var fileName = isVoidTransaction ? _filePaths.Transactions_Voids : _filePaths.Transactions_Sales;
+
+            // Get all "tran" elements from the file
+            var transactionsXml = await _fileService.GetXmlElementsFromFileAsync(fileName, "tran");
+            _transactionsRepository.PrintRepository();
+            // Process each transaction
+            foreach (var xml in transactionsXml)
+            {
+                var transactionId = int.Parse(xml.Element("refNo").Value);
+
+                if (isVoidTransaction)
                 {
-                    // Load the "tran" element directly into an XElement
-                    var xml = XElement.Load(reader.ReadSubtree());
-
-                    // Create a void transaction from the XML data
-                    var voidTransaction = new TransactionDTO
+                    foreach (var processor in _defaultProcessors)
                     {
-                        TransactionID = int.Parse(xml.Element("refNo").Value),
-                        Amount = decimal.Parse(xml.Element("amount").Value),
-                        TransactionType = new TransactionTypeDTO
+                        var transaction = _transactionsRepository.GetTransaction(transactionId);
+                        Console.WriteLine($"Unsaved transaction {transaction}");
+
+                        if (transaction != null)
                         {
-                            TypeName = xml.Element("type").Value
-                        },
-                    };
-
-                    // Get the transaction to void from the repository
-                    var transactionToVoid = _transactionsRepository.GetTransaction(voidTransaction.TransactionID);
-
-                    // Check if the void transaction is valid
-                    if (transactionToVoid != null && transactionToVoid.Amount == voidTransaction.Amount)
-                    {
-                        // Get the processor of the voided transaction
-                        var processor = _processorService.GetProcessor(transactionToVoid.ProcessorName);
-
-                        // Remove the voided transaction from its processor's transactions
-                        processor.Transactions.Remove(transactionToVoid);
-
-                        // Recalculate the total fee for the processor
-
-                        _processorService.CalculateTotalFee(processor);
+                            processor.Transactions.Remove(transaction);
+                            _processorService.CalculateTotalFee(processor);
+                        }
                     }
-
+                }
+                else
+                {
+                    // Iterate over each default processor and add the transaction
+                    foreach (var processor in _defaultProcessors)
+                    {
+                        AddTransactionFromXml(xml, processor);
+                    }
                 }
             }
-
-            // Rank processors based on total fee after void transactions have been processed
+            // Rank processors based on total fee after processing the transactions
             var processors = GetProcessors();
             var rankingService = new ProcessorRankingService();
             var rankings = rankingService.RankProcessors(processors);
 
-            // Update the rank of each transaction
+            // Update the rank of each processor
             foreach (var processor in processors)
             {
                 var processorRanking = rankings.FirstOrDefault(ranking => ranking.ProcessorName == processor.ProcessorName);
@@ -207,6 +165,11 @@ namespace Datacap.Services
                     processor.Rank = processorRanking.Rank;
                 }
             }
+
+            // Call scope.Complete() when the transaction is successful
+            scope.Complete();
+            }
         }
+
     }
 }

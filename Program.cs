@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -74,6 +75,21 @@ var defaultProcessors = new List<ProcessorDTO>
         Transactions = new List<TransactionDTO>(), // Initialize transaction list
     }
 };
+
+// Registering default processors
+builder.Services.AddSingleton(defaultProcessors);
+
+// Registering transaction repository and service
+builder.Services.AddScoped<ITransactionRespository, InMemoryTransactionRepository>();
+builder.Services.AddScoped<TransactionsService>(sp => new TransactionsService(
+    sp.GetRequiredService<ITransactionRespository>(),
+    sp.GetRequiredService<IOptions<FilePaths>>(),
+    sp.GetRequiredService<ILogger<TransactionsService>>(),
+    sp.GetRequiredService<ProcessorService>(),
+    sp.GetRequiredService<IConfiguration>(),
+    sp.GetRequiredService<FileService>(),
+    sp.GetRequiredService<List<ProcessorDTO>>()
+));
 
 // Registering processor service with the default processors
 builder.Services.AddSingleton(new ProcessorService(defaultProcessors));
