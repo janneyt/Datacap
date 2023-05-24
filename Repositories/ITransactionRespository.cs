@@ -7,6 +7,8 @@ namespace Datacap.Repositories
     {
         List<TransactionDTO> GetTransactions();
         void AddTransaction(TransactionDTO transaction);
-        List<TransactionDTO> GetAllTransactions(); // Add this method
+        List<TransactionDTO> GetAllTransactions();
+
+        TransactionDTO GetTransaction(int transactionID);
     }
 }

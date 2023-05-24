@@ -12,12 +12,5 @@ public class ProcessorController : ControllerBase
     {
         _processorService = processorService;
     }
-
-    [HttpPost]
-    public IActionResult AddProcessor([FromBody] FeeRuleDTO feeRuleDto)
-    {
-        _processorService.AddProcessor(feeRuleDto);
-        return Ok();
-    }
 }
 

@@ -1,6 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Transactions;
 using Datacap.Models;
 using Datacap.Repositories;
+using System.Linq;
+using Datacap.Models.DTO_Models; 
+
 namespace Datacap.Repositories
 {
     public class InMemoryTransactionRepository : ITransactionRespository
@@ -22,5 +26,10 @@ namespace Datacap.Repositories
         {
             return transactions;
         }
+        public TransactionDTO GetTransaction(int transactionID)
+        {
+            return transactions.FirstOrDefault(t => t.TransactionID == transactionID);
+        }
+
     }
 }
