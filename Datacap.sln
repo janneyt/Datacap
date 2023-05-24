@@ -5,8 +5,6 @@ VisualStudioVersion = 17.6.33717.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datacap", "Datacap.csproj", "{ED7C6F3B-7DAD-4C9A-97D1-61BFBDE73224}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DatacapSetup", "..\DatacapSetup\DatacapSetup.vdproj", "{D98E6530-709A-4185-A8C1-654197ABBB02}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{ED7C6F3B-7DAD-4C9A-97D1-61BFBDE73224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED7C6F3B-7DAD-4C9A-97D1-61BFBDE73224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED7C6F3B-7DAD-4C9A-97D1-61BFBDE73224}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D98E6530-709A-4185-A8C1-654197ABBB02}.Debug|Any CPU.ActiveCfg = Debug
-		{D98E6530-709A-4185-A8C1-654197ABBB02}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
