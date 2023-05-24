@@ -26,18 +26,44 @@ namespace Datacap.Controllers
             _logger = logger;
         }
 
+        // This gets the "leaderboard", i.e. just the processors ranked by total fees
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            _logger.LogInformation("Getting all processors controller");
             var processors = await _transactionsService.GetAllProcessorsAsync(false);
 
             var responses = processors.Select(p => new ProcessorResponse
             {
                 Name = p.ProcessorName,
                 TotalFee = p.TotalFee,
+
             }).OrderByDescending(r => r.TotalFee).ThenBy(r => r.Name).ToList();
+
+
+            // Rank processors based on total fee
+            int rank = 1;
+            for (int i = 0; i < responses.Count(); i++)
+            {
+                responses[i].Rank = rank++;
+            }
+            string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
+            return Content(jsonResponse, "application/json");
+        }
+
+        // This gets the leaderboard and all transactions
+        [HttpGet("AllResults")]
+        public async Task<IActionResult> GetFullResults()
+        {
+            var processors = await _transactionsService.GetAllProcessorsAsync(false);
+
+            var responses = processors.Select(p => new ProcessorResponse
+            {
+                Name = p.ProcessorName,
+                TotalFee = p.TotalFee,
+                Transactions = p.Transactions
+            }).OrderByDescending(r => r.TotalFee).ThenBy(r => r.Name).ToList();
+
 
             // Rank processors based on total fee
             int rank = 1;
@@ -55,14 +81,15 @@ namespace Datacap.Controllers
         {
             await _transactionsService.ProcessTransactionsAsync(true);
 
-            _logger.LogInformation("Getting all processors after voiding transactions");
             var processors = await _transactionsService.GetAllProcessorsAsync(true);
 
             var responses = processors.Select(p => new ProcessorResponse
             {
                 Name = p.ProcessorName,
                 TotalFee = p.TotalFee,
+                
             }).OrderByDescending(r => r.TotalFee).ThenBy(r => r.Name).ToList();
+
 
             // Rank processors based on total fee
             int rank = 1;
@@ -72,7 +99,6 @@ namespace Datacap.Controllers
             }
 
             string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
-            _logger.LogInformation($"jsonResponse after voiding transactions {jsonResponse}");
             return Content(jsonResponse, "application/json");
         }
     }
