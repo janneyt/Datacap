@@ -17,6 +17,7 @@ namespace Datacap.Controllers
         private readonly TransactionsService _transactionsService;
         private readonly FilePaths _filePaths;
         private readonly ILogger<TransactionController> _logger;
+        private readonly List<TransactionDTO> _transactionRepository;
 
         public TransactionController(TransactionsService transactionsService, IOptions<FilePaths> filePaths, ILogger<TransactionController> logger)
         {
@@ -44,7 +45,6 @@ namespace Datacap.Controllers
             {
                 responses[i].Rank = rank++;
             }
-
             string jsonResponse = JsonConvert.SerializeObject(responses, Formatting.Indented);
             Console.WriteLine($"jsonResponse {jsonResponse}");
             return Content(jsonResponse, "application/json");

@@ -1,0 +1,1056 @@
+1,76.02,TSYS,1:Sale,0,0
+1,76.02,First Data,1:Sale,0,0
+1,76.02,EVO,1:Sale,0,0
+2,83.52,TSYS,1:Sale,0,0
+2,83.52,First Data,1:Sale,0,0
+2,83.52,EVO,1:Sale,0,0
+3,9.50,TSYS,1:Sale,0,0
+3,9.50,First Data,1:Sale,0,0
+3,9.50,EVO,1:Sale,0,0
+4,60.04,TSYS,1:Sale,0,0
+4,60.04,First Data,1:Sale,0,0
+4,60.04,EVO,1:Sale,0,0
+5,73.16,TSYS,1:Sale,0,0
+5,73.16,First Data,1:Sale,0,0
+5,73.16,EVO,1:Sale,0,0
+6,61.73,TSYS,1:Sale,0,0
+6,61.73,First Data,1:Sale,0,0
+6,61.73,EVO,1:Sale,0,0
+7,51.08,TSYS,1:Sale,0,0
+7,51.08,First Data,1:Sale,0,0
+7,51.08,EVO,1:Sale,0,0
+8,73.22,TSYS,1:Sale,0,0
+8,73.22,First Data,1:Sale,0,0
+8,73.22,EVO,1:Sale,0,0
+9,40.72,TSYS,1:Sale,0,0
+9,40.72,First Data,1:Sale,0,0
+9,40.72,EVO,1:Sale,0,0
+10,19.10,TSYS,1:Sale,0,0
+10,19.10,First Data,1:Sale,0,0
+10,19.10,EVO,1:Sale,0,0
+11,59.01,TSYS,1:Sale,0,0
+11,59.01,First Data,1:Sale,0,0
+11,59.01,EVO,1:Sale,0,0
+12,31.92,TSYS,1:Sale,0,0
+12,31.92,First Data,1:Sale,0,0
+12,31.92,EVO,1:Sale,0,0
+13,11.23,TSYS,1:Sale,0,0
+13,11.23,First Data,1:Sale,0,0
+13,11.23,EVO,1:Sale,0,0
+14,78.87,TSYS,1:Sale,0,0
+14,78.87,First Data,1:Sale,0,0
+14,78.87,EVO,1:Sale,0,0
+15,23.75,TSYS,1:Sale,0,0
+15,23.75,First Data,1:Sale,0,0
+15,23.75,EVO,1:Sale,0,0
+16,26.53,TSYS,1:Sale,0,0
+16,26.53,First Data,1:Sale,0,0
+16,26.53,EVO,1:Sale,0,0
+17,91.07,TSYS,1:Sale,0,0
+17,91.07,First Data,1:Sale,0,0
+17,91.07,EVO,1:Sale,0,0
+18,80.27,TSYS,1:Sale,0,0
+18,80.27,First Data,1:Sale,0,0
+18,80.27,EVO,1:Sale,0,0
+19,96.19,TSYS,1:Sale,0,0
+19,96.19,First Data,1:Sale,0,0
+19,96.19,EVO,1:Sale,0,0
+20,11.90,TSYS,1:Sale,0,0
+20,11.90,First Data,1:Sale,0,0
+20,11.90,EVO,1:Sale,0,0
+21,47.59,TSYS,1:Sale,0,0
+21,47.59,First Data,1:Sale,0,0
+21,47.59,EVO,1:Sale,0,0
+22,92.76,TSYS,1:Sale,0,0
+22,92.76,First Data,1:Sale,0,0
+22,92.76,EVO,1:Sale,0,0
+23,21.51,TSYS,1:Sale,0,0
+23,21.51,First Data,1:Sale,0,0
+23,21.51,EVO,1:Sale,0,0
+24,91.77,TSYS,1:Sale,0,0
+24,91.77,First Data,1:Sale,0,0
+24,91.77,EVO,1:Sale,0,0
+25,70.46,TSYS,1:Sale,0,0
+25,70.46,First Data,1:Sale,0,0
+25,70.46,EVO,1:Sale,0,0
+26,54.24,TSYS,1:Sale,0,0
+26,54.24,First Data,1:Sale,0,0
+26,54.24,EVO,1:Sale,0,0
+27,84.98,TSYS,1:Sale,0,0
+27,84.98,First Data,1:Sale,0,0
+27,84.98,EVO,1:Sale,0,0
+28,25.94,TSYS,1:Sale,0,0
+28,25.94,First Data,1:Sale,0,0
+28,25.94,EVO,1:Sale,0,0
+29,91.69,TSYS,1:Sale,0,0
+29,91.69,First Data,1:Sale,0,0
+29,91.69,EVO,1:Sale,0,0
+30,79.89,TSYS,1:Sale,0,0
+30,79.89,First Data,1:Sale,0,0
+30,79.89,EVO,1:Sale,0,0
+31,74.77,TSYS,1:Sale,0,0
+31,74.77,First Data,1:Sale,0,0
+31,74.77,EVO,1:Sale,0,0
+32,14.19,TSYS,1:Sale,0,0
+32,14.19,First Data,1:Sale,0,0
+32,14.19,EVO,1:Sale,0,0
+33,32.51,TSYS,1:Sale,0,0
+33,32.51,First Data,1:Sale,0,0
+33,32.51,EVO,1:Sale,0,0
+34,60.16,TSYS,1:Sale,0,0
+34,60.16,First Data,1:Sale,0,0
+34,60.16,EVO,1:Sale,0,0
+35,55.48,TSYS,1:Sale,0,0
+35,55.48,First Data,1:Sale,0,0
+35,55.48,EVO,1:Sale,0,0
+36,27.49,TSYS,1:Sale,0,0
+36,27.49,First Data,1:Sale,0,0
+36,27.49,EVO,1:Sale,0,0
+37,89.69,TSYS,1:Sale,0,0
+37,89.69,First Data,1:Sale,0,0
+37,89.69,EVO,1:Sale,0,0
+38,98.32,TSYS,1:Sale,0,0
+38,98.32,First Data,1:Sale,0,0
+38,98.32,EVO,1:Sale,0,0
+39,73.95,TSYS,1:Sale,0,0
+39,73.95,First Data,1:Sale,0,0
+39,73.95,EVO,1:Sale,0,0
+40,61.40,TSYS,1:Sale,0,0
+40,61.40,First Data,1:Sale,0,0
+40,61.40,EVO,1:Sale,0,0
+41,11.73,TSYS,1:Sale,0,0
+41,11.73,First Data,1:Sale,0,0
+41,11.73,EVO,1:Sale,0,0
+42,7.50,TSYS,1:Sale,0,0
+42,7.50,First Data,1:Sale,0,0
+42,7.50,EVO,1:Sale,0,0
+43,10.92,TSYS,1:Sale,0,0
+43,10.92,First Data,1:Sale,0,0
+43,10.92,EVO,1:Sale,0,0
+44,69.75,TSYS,1:Sale,0,0
+44,69.75,First Data,1:Sale,0,0
+44,69.75,EVO,1:Sale,0,0
+45,94.87,TSYS,1:Sale,0,0
+45,94.87,First Data,1:Sale,0,0
+45,94.87,EVO,1:Sale,0,0
+46,87.60,TSYS,1:Sale,0,0
+46,87.60,First Data,1:Sale,0,0
+46,87.60,EVO,1:Sale,0,0
+47,28.26,TSYS,1:Sale,0,0
+47,28.26,First Data,1:Sale,0,0
+47,28.26,EVO,1:Sale,0,0
+48,75.88,TSYS,1:Sale,0,0
+48,75.88,First Data,1:Sale,0,0
+48,75.88,EVO,1:Sale,0,0
+49,32.19,TSYS,1:Sale,0,0
+49,32.19,First Data,1:Sale,0,0
+49,32.19,EVO,1:Sale,0,0
+50,59.96,TSYS,1:Sale,0,0
+50,59.96,First Data,1:Sale,0,0
+50,59.96,EVO,1:Sale,0,0
+51,97.10,TSYS,1:Sale,0,0
+51,97.10,First Data,1:Sale,0,0
+51,97.10,EVO,1:Sale,0,0
+52,57.69,TSYS,1:Sale,0,0
+52,57.69,First Data,1:Sale,0,0
+52,57.69,EVO,1:Sale,0,0
+53,57.72,TSYS,1:Sale,0,0
+53,57.72,First Data,1:Sale,0,0
+53,57.72,EVO,1:Sale,0,0
+54,31.72,TSYS,1:Sale,0,0
+54,31.72,First Data,1:Sale,0,0
+54,31.72,EVO,1:Sale,0,0
+55,74.85,TSYS,1:Sale,0,0
+55,74.85,First Data,1:Sale,0,0
+55,74.85,EVO,1:Sale,0,0
+56,61.85,TSYS,1:Sale,0,0
+56,61.85,First Data,1:Sale,0,0
+56,61.85,EVO,1:Sale,0,0
+57,29.44,TSYS,1:Sale,0,0
+57,29.44,First Data,1:Sale,0,0
+57,29.44,EVO,1:Sale,0,0
+58,54.66,TSYS,1:Sale,0,0
+58,54.66,First Data,1:Sale,0,0
+58,54.66,EVO,1:Sale,0,0
+59,95.67,TSYS,1:Sale,0,0
+59,95.67,First Data,1:Sale,0,0
+59,95.67,EVO,1:Sale,0,0
+60,77.24,TSYS,1:Sale,0,0
+60,77.24,First Data,1:Sale,0,0
+60,77.24,EVO,1:Sale,0,0
+61,23.93,TSYS,1:Sale,0,0
+61,23.93,First Data,1:Sale,0,0
+61,23.93,EVO,1:Sale,0,0
+62,48.88,TSYS,1:Sale,0,0
+62,48.88,First Data,1:Sale,0,0
+62,48.88,EVO,1:Sale,0,0
+63,40.90,TSYS,1:Sale,0,0
+63,40.90,First Data,1:Sale,0,0
+63,40.90,EVO,1:Sale,0,0
+64,76.76,TSYS,1:Sale,0,0
+64,76.76,First Data,1:Sale,0,0
+64,76.76,EVO,1:Sale,0,0
+65,28.45,TSYS,1:Sale,0,0
+65,28.45,First Data,1:Sale,0,0
+65,28.45,EVO,1:Sale,0,0
+66,42.66,TSYS,1:Sale,0,0
+66,42.66,First Data,1:Sale,0,0
+66,42.66,EVO,1:Sale,0,0
+67,93.42,TSYS,1:Sale,0,0
+67,93.42,First Data,1:Sale,0,0
+67,93.42,EVO,1:Sale,0,0
+68,69.15,TSYS,1:Sale,0,0
+68,69.15,First Data,1:Sale,0,0
+68,69.15,EVO,1:Sale,0,0
+69,45.68,TSYS,1:Sale,0,0
+69,45.68,First Data,1:Sale,0,0
+69,45.68,EVO,1:Sale,0,0
+70,66.34,TSYS,1:Sale,0,0
+70,66.34,First Data,1:Sale,0,0
+70,66.34,EVO,1:Sale,0,0
+71,98.54,TSYS,1:Sale,0,0
+71,98.54,First Data,1:Sale,0,0
+71,98.54,EVO,1:Sale,0,0
+72,6.14,TSYS,1:Sale,0,0
+72,6.14,First Data,1:Sale,0,0
+72,6.14,EVO,1:Sale,0,0
+73,69.03,TSYS,1:Sale,0,0
+73,69.03,First Data,1:Sale,0,0
+73,69.03,EVO,1:Sale,0,0
+74,38.89,TSYS,1:Sale,0,0
+74,38.89,First Data,1:Sale,0,0
+74,38.89,EVO,1:Sale,0,0
+75,28.20,TSYS,1:Sale,0,0
+75,28.20,First Data,1:Sale,0,0
+75,28.20,EVO,1:Sale,0,0
+76,74.96,TSYS,1:Sale,0,0
+76,74.96,First Data,1:Sale,0,0
+76,74.96,EVO,1:Sale,0,0
+77,82.35,TSYS,1:Sale,0,0
+77,82.35,First Data,1:Sale,0,0
+77,82.35,EVO,1:Sale,0,0
+78,56.14,TSYS,1:Sale,0,0
+78,56.14,First Data,1:Sale,0,0
+78,56.14,EVO,1:Sale,0,0
+79,33.12,TSYS,1:Sale,0,0
+79,33.12,First Data,1:Sale,0,0
+79,33.12,EVO,1:Sale,0,0
+80,89.95,TSYS,1:Sale,0,0
+80,89.95,First Data,1:Sale,0,0
+80,89.95,EVO,1:Sale,0,0
+81,57.15,TSYS,1:Sale,0,0
+81,57.15,First Data,1:Sale,0,0
+81,57.15,EVO,1:Sale,0,0
+82,9.80,TSYS,1:Sale,0,0
+82,9.80,First Data,1:Sale,0,0
+82,9.80,EVO,1:Sale,0,0
+83,84.04,TSYS,1:Sale,0,0
+83,84.04,First Data,1:Sale,0,0
+83,84.04,EVO,1:Sale,0,0
+84,3.69,TSYS,1:Sale,0,0
+84,3.69,First Data,1:Sale,0,0
+84,3.69,EVO,1:Sale,0,0
+85,19.27,TSYS,1:Sale,0,0
+85,19.27,First Data,1:Sale,0,0
+85,19.27,EVO,1:Sale,0,0
+86,24.29,TSYS,1:Sale,0,0
+86,24.29,First Data,1:Sale,0,0
+86,24.29,EVO,1:Sale,0,0
+87,10.47,TSYS,1:Sale,0,0
+87,10.47,First Data,1:Sale,0,0
+87,10.47,EVO,1:Sale,0,0
+88,38.44,TSYS,1:Sale,0,0
+88,38.44,First Data,1:Sale,0,0
+88,38.44,EVO,1:Sale,0,0
+89,79.78,TSYS,1:Sale,0,0
+89,79.78,First Data,1:Sale,0,0
+89,79.78,EVO,1:Sale,0,0
+90,20.18,TSYS,1:Sale,0,0
+90,20.18,First Data,1:Sale,0,0
+90,20.18,EVO,1:Sale,0,0
+91,49.69,TSYS,1:Sale,0,0
+91,49.69,First Data,1:Sale,0,0
+91,49.69,EVO,1:Sale,0,0
+92,42.6,TSYS,1:Sale,0,0
+92,42.6,First Data,1:Sale,0,0
+92,42.6,EVO,1:Sale,0,0
+93,16.84,TSYS,1:Sale,0,0
+93,16.84,First Data,1:Sale,0,0
+93,16.84,EVO,1:Sale,0,0
+94,15.41,TSYS,1:Sale,0,0
+94,15.41,First Data,1:Sale,0,0
+94,15.41,EVO,1:Sale,0,0
+95,0.95,TSYS,1:Sale,0,0
+95,0.95,First Data,1:Sale,0,0
+95,0.95,EVO,1:Sale,0,0
+96,50.31,TSYS,1:Sale,0,0
+96,50.31,First Data,1:Sale,0,0
+96,50.31,EVO,1:Sale,0,0
+97,92.37,TSYS,1:Sale,0,0
+97,92.37,First Data,1:Sale,0,0
+97,92.37,EVO,1:Sale,0,0
+98,29.80,TSYS,1:Sale,0,0
+98,29.80,First Data,1:Sale,0,0
+98,29.80,EVO,1:Sale,0,0
+99,75.41,TSYS,1:Sale,0,0
+99,75.41,First Data,1:Sale,0,0
+99,75.41,EVO,1:Sale,0,0
+100,23.10,TSYS,1:Sale,0,0
+100,23.10,First Data,1:Sale,0,0
+100,23.10,EVO,1:Sale,0,0
+101,4.90,TSYS,1:Sale,0,0
+101,4.90,First Data,1:Sale,0,0
+101,4.90,EVO,1:Sale,0,0
+102,69.77,TSYS,1:Sale,0,0
+102,69.77,First Data,1:Sale,0,0
+102,69.77,EVO,1:Sale,0,0
+103,94.87,TSYS,1:Sale,0,0
+103,94.87,First Data,1:Sale,0,0
+103,94.87,EVO,1:Sale,0,0
+104,38.45,TSYS,1:Sale,0,0
+104,38.45,First Data,1:Sale,0,0
+104,38.45,EVO,1:Sale,0,0
+105,42.48,TSYS,1:Sale,0,0
+105,42.48,First Data,1:Sale,0,0
+105,42.48,EVO,1:Sale,0,0
+106,79.79,TSYS,1:Sale,0,0
+106,79.79,First Data,1:Sale,0,0
+106,79.79,EVO,1:Sale,0,0
+107,63.96,TSYS,1:Sale,0,0
+107,63.96,First Data,1:Sale,0,0
+107,63.96,EVO,1:Sale,0,0
+108,31.25,TSYS,1:Sale,0,0
+108,31.25,First Data,1:Sale,0,0
+108,31.25,EVO,1:Sale,0,0
+109,59.89,TSYS,1:Sale,0,0
+109,59.89,First Data,1:Sale,0,0
+109,59.89,EVO,1:Sale,0,0
+110,59.43,TSYS,1:Sale,0,0
+110,59.43,First Data,1:Sale,0,0
+110,59.43,EVO,1:Sale,0,0
+111,92.79,TSYS,1:Sale,0,0
+111,92.79,First Data,1:Sale,0,0
+111,92.79,EVO,1:Sale,0,0
+112,43.57,TSYS,1:Sale,0,0
+112,43.57,First Data,1:Sale,0,0
+112,43.57,EVO,1:Sale,0,0
+113,34.94,TSYS,1:Sale,0,0
+113,34.94,First Data,1:Sale,0,0
+113,34.94,EVO,1:Sale,0,0
+114,27.29,TSYS,1:Sale,0,0
+114,27.29,First Data,1:Sale,0,0
+114,27.29,EVO,1:Sale,0,0
+115,3.24,TSYS,1:Sale,0,0
+115,3.24,First Data,1:Sale,0,0
+115,3.24,EVO,1:Sale,0,0
+116,77.70,TSYS,1:Sale,0,0
+116,77.70,First Data,1:Sale,0,0
+116,77.70,EVO,1:Sale,0,0
+117,2.39,TSYS,1:Sale,0,0
+117,2.39,First Data,1:Sale,0,0
+117,2.39,EVO,1:Sale,0,0
+118,61.32,TSYS,1:Sale,0,0
+118,61.32,First Data,1:Sale,0,0
+118,61.32,EVO,1:Sale,0,0
+119,12.53,TSYS,1:Sale,0,0
+119,12.53,First Data,1:Sale,0,0
+119,12.53,EVO,1:Sale,0,0
+120,91.59,TSYS,1:Sale,0,0
+120,91.59,First Data,1:Sale,0,0
+120,91.59,EVO,1:Sale,0,0
+121,99.25,TSYS,1:Sale,0,0
+121,99.25,First Data,1:Sale,0,0
+121,99.25,EVO,1:Sale,0,0
+122,46.47,TSYS,1:Sale,0,0
+122,46.47,First Data,1:Sale,0,0
+122,46.47,EVO,1:Sale,0,0
+123,12.34,TSYS,1:Sale,0,0
+123,12.34,First Data,1:Sale,0,0
+123,12.34,EVO,1:Sale,0,0
+124,87.47,TSYS,1:Sale,0,0
+124,87.47,First Data,1:Sale,0,0
+124,87.47,EVO,1:Sale,0,0
+125,8.22,TSYS,1:Sale,0,0
+125,8.22,First Data,1:Sale,0,0
+125,8.22,EVO,1:Sale,0,0
+126,71.35,TSYS,1:Sale,0,0
+126,71.35,First Data,1:Sale,0,0
+126,71.35,EVO,1:Sale,0,0
+127,49.76,TSYS,1:Sale,0,0
+127,49.76,First Data,1:Sale,0,0
+127,49.76,EVO,1:Sale,0,0
+128,43.94,TSYS,1:Sale,0,0
+128,43.94,First Data,1:Sale,0,0
+128,43.94,EVO,1:Sale,0,0
+129,0.21,TSYS,1:Sale,0,0
+129,0.21,First Data,1:Sale,0,0
+129,0.21,EVO,1:Sale,0,0
+130,34.93,TSYS,1:Sale,0,0
+130,34.93,First Data,1:Sale,0,0
+130,34.93,EVO,1:Sale,0,0
+131,3.37,TSYS,1:Sale,0,0
+131,3.37,First Data,1:Sale,0,0
+131,3.37,EVO,1:Sale,0,0
+132,42.79,TSYS,1:Sale,0,0
+132,42.79,First Data,1:Sale,0,0
+132,42.79,EVO,1:Sale,0,0
+133,65.22,TSYS,1:Sale,0,0
+133,65.22,First Data,1:Sale,0,0
+133,65.22,EVO,1:Sale,0,0
+134,43.48,TSYS,1:Sale,0,0
+134,43.48,First Data,1:Sale,0,0
+134,43.48,EVO,1:Sale,0,0
+135,81.19,TSYS,1:Sale,0,0
+135,81.19,First Data,1:Sale,0,0
+135,81.19,EVO,1:Sale,0,0
+136,86.18,TSYS,1:Sale,0,0
+136,86.18,First Data,1:Sale,0,0
+136,86.18,EVO,1:Sale,0,0
+137,27.23,TSYS,1:Sale,0,0
+137,27.23,First Data,1:Sale,0,0
+137,27.23,EVO,1:Sale,0,0
+138,95.98,TSYS,1:Sale,0,0
+138,95.98,First Data,1:Sale,0,0
+138,95.98,EVO,1:Sale,0,0
+139,89.62,TSYS,1:Sale,0,0
+139,89.62,First Data,1:Sale,0,0
+139,89.62,EVO,1:Sale,0,0
+140,9.25,TSYS,1:Sale,0,0
+140,9.25,First Data,1:Sale,0,0
+140,9.25,EVO,1:Sale,0,0
+141,76.42,TSYS,1:Sale,0,0
+141,76.42,First Data,1:Sale,0,0
+141,76.42,EVO,1:Sale,0,0
+142,22.85,TSYS,1:Sale,0,0
+142,22.85,First Data,1:Sale,0,0
+142,22.85,EVO,1:Sale,0,0
+143,79.27,TSYS,1:Sale,0,0
+143,79.27,First Data,1:Sale,0,0
+143,79.27,EVO,1:Sale,0,0
+144,20.23,TSYS,1:Sale,0,0
+144,20.23,First Data,1:Sale,0,0
+144,20.23,EVO,1:Sale,0,0
+145,19.56,TSYS,1:Sale,0,0
+145,19.56,First Data,1:Sale,0,0
+145,19.56,EVO,1:Sale,0,0
+146,51.14,TSYS,1:Sale,0,0
+146,51.14,First Data,1:Sale,0,0
+146,51.14,EVO,1:Sale,0,0
+147,42.52,TSYS,1:Sale,0,0
+147,42.52,First Data,1:Sale,0,0
+147,42.52,EVO,1:Sale,0,0
+148,36.80,TSYS,1:Sale,0,0
+148,36.80,First Data,1:Sale,0,0
+148,36.80,EVO,1:Sale,0,0
+149,19.91,TSYS,1:Sale,0,0
+149,19.91,First Data,1:Sale,0,0
+149,19.91,EVO,1:Sale,0,0
+150,53.11,TSYS,1:Sale,0,0
+150,53.11,First Data,1:Sale,0,0
+150,53.11,EVO,1:Sale,0,0
+151,54.49,TSYS,1:Sale,0,0
+151,54.49,First Data,1:Sale,0,0
+151,54.49,EVO,1:Sale,0,0
+152,11.20,TSYS,1:Sale,0,0
+152,11.20,First Data,1:Sale,0,0
+152,11.20,EVO,1:Sale,0,0
+153,81.68,TSYS,1:Sale,0,0
+153,81.68,First Data,1:Sale,0,0
+153,81.68,EVO,1:Sale,0,0
+154,29.67,TSYS,1:Sale,0,0
+154,29.67,First Data,1:Sale,0,0
+154,29.67,EVO,1:Sale,0,0
+155,88.65,TSYS,1:Sale,0,0
+155,88.65,First Data,1:Sale,0,0
+155,88.65,EVO,1:Sale,0,0
+156,54.58,TSYS,1:Sale,0,0
+156,54.58,First Data,1:Sale,0,0
+156,54.58,EVO,1:Sale,0,0
+157,68.35,TSYS,1:Sale,0,0
+157,68.35,First Data,1:Sale,0,0
+157,68.35,EVO,1:Sale,0,0
+158,3.40,TSYS,1:Sale,0,0
+158,3.40,First Data,1:Sale,0,0
+158,3.40,EVO,1:Sale,0,0
+159,13.69,TSYS,1:Sale,0,0
+159,13.69,First Data,1:Sale,0,0
+159,13.69,EVO,1:Sale,0,0
+160,17.27,TSYS,1:Sale,0,0
+160,17.27,First Data,1:Sale,0,0
+160,17.27,EVO,1:Sale,0,0
+161,27.22,TSYS,1:Sale,0,0
+161,27.22,First Data,1:Sale,0,0
+161,27.22,EVO,1:Sale,0,0
+162,72.06,TSYS,1:Sale,0,0
+162,72.06,First Data,1:Sale,0,0
+162,72.06,EVO,1:Sale,0,0
+163,47.00,TSYS,1:Sale,0,0
+163,47.00,First Data,1:Sale,0,0
+163,47.00,EVO,1:Sale,0,0
+164,74.80,TSYS,1:Sale,0,0
+164,74.80,First Data,1:Sale,0,0
+164,74.80,EVO,1:Sale,0,0
+165,11.80,TSYS,1:Sale,0,0
+165,11.80,First Data,1:Sale,0,0
+165,11.80,EVO,1:Sale,0,0
+166,29.42,TSYS,1:Sale,0,0
+166,29.42,First Data,1:Sale,0,0
+166,29.42,EVO,1:Sale,0,0
+167,57.36,TSYS,1:Sale,0,0
+167,57.36,First Data,1:Sale,0,0
+167,57.36,EVO,1:Sale,0,0
+168,48.19,TSYS,1:Sale,0,0
+168,48.19,First Data,1:Sale,0,0
+168,48.19,EVO,1:Sale,0,0
+169,78.71,TSYS,1:Sale,0,0
+169,78.71,First Data,1:Sale,0,0
+169,78.71,EVO,1:Sale,0,0
+170,99.07,TSYS,1:Sale,0,0
+170,99.07,First Data,1:Sale,0,0
+170,99.07,EVO,1:Sale,0,0
+171,14.90,TSYS,1:Sale,0,0
+171,14.90,First Data,1:Sale,0,0
+171,14.90,EVO,1:Sale,0,0
+172,50.65,TSYS,1:Sale,0,0
+172,50.65,First Data,1:Sale,0,0
+172,50.65,EVO,1:Sale,0,0
+173,65.10,TSYS,1:Sale,0,0
+173,65.10,First Data,1:Sale,0,0
+173,65.10,EVO,1:Sale,0,0
+174,20.46,TSYS,1:Sale,0,0
+174,20.46,First Data,1:Sale,0,0
+174,20.46,EVO,1:Sale,0,0
+179,87.76,TSYS,1:Sale,0,0
+179,87.76,First Data,1:Sale,0,0
+179,87.76,EVO,1:Sale,0,0
+180,81.37,TSYS,1:Sale,0,0
+180,81.37,First Data,1:Sale,0,0
+180,81.37,EVO,1:Sale,0,0
+181,53.28,TSYS,1:Sale,0,0
+181,53.28,First Data,1:Sale,0,0
+181,53.28,EVO,1:Sale,0,0
+182,57.58,TSYS,1:Sale,0,0
+182,57.58,First Data,1:Sale,0,0
+182,57.58,EVO,1:Sale,0,0
+183,74.46,TSYS,1:Sale,0,0
+183,74.46,First Data,1:Sale,0,0
+183,74.46,EVO,1:Sale,0,0
+184,51.72,TSYS,1:Sale,0,0
+184,51.72,First Data,1:Sale,0,0
+184,51.72,EVO,1:Sale,0,0
+185,93.25,TSYS,1:Sale,0,0
+185,93.25,First Data,1:Sale,0,0
+185,93.25,EVO,1:Sale,0,0
+186,87.91,TSYS,1:Sale,0,0
+186,87.91,First Data,1:Sale,0,0
+186,87.91,EVO,1:Sale,0,0
+187,1.34,TSYS,1:Sale,0,0
+187,1.34,First Data,1:Sale,0,0
+187,1.34,EVO,1:Sale,0,0
+188,67.03,TSYS,1:Sale,0,0
+188,67.03,First Data,1:Sale,0,0
+188,67.03,EVO,1:Sale,0,0
+189,66.13,TSYS,1:Sale,0,0
+189,66.13,First Data,1:Sale,0,0
+189,66.13,EVO,1:Sale,0,0
+190,19.26,TSYS,1:Sale,0,0
+190,19.26,First Data,1:Sale,0,0
+190,19.26,EVO,1:Sale,0,0
+191,67.36,TSYS,1:Sale,0,0
+191,67.36,First Data,1:Sale,0,0
+191,67.36,EVO,1:Sale,0,0
+192,64.68,TSYS,1:Sale,0,0
+192,64.68,First Data,1:Sale,0,0
+192,64.68,EVO,1:Sale,0,0
+193,92.02,TSYS,1:Sale,0,0
+193,92.02,First Data,1:Sale,0,0
+193,92.02,EVO,1:Sale,0,0
+194,32.24,TSYS,1:Sale,0,0
+194,32.24,First Data,1:Sale,0,0
+194,32.24,EVO,1:Sale,0,0
+195,19.35,TSYS,1:Sale,0,0
+195,19.35,First Data,1:Sale,0,0
+195,19.35,EVO,1:Sale,0,0
+196,34.18,TSYS,1:Sale,0,0
+196,34.18,First Data,1:Sale,0,0
+196,34.18,EVO,1:Sale,0,0
+197,61.58,TSYS,1:Sale,0,0
+197,61.58,First Data,1:Sale,0,0
+197,61.58,EVO,1:Sale,0,0
+198,76.83,TSYS,1:Sale,0,0
+198,76.83,First Data,1:Sale,0,0
+198,76.83,EVO,1:Sale,0,0
+199,19.14,TSYS,1:Sale,0,0
+199,19.14,First Data,1:Sale,0,0
+199,19.14,EVO,1:Sale,0,0
+200,94.91,TSYS,1:Sale,0,0
+200,94.91,First Data,1:Sale,0,0
+200,94.91,EVO,1:Sale,0,0
+201,25.85,TSYS,1:Sale,0,0
+201,25.85,First Data,1:Sale,0,0
+201,25.85,EVO,1:Sale,0,0
+202,2.29,TSYS,1:Sale,0,0
+202,2.29,First Data,1:Sale,0,0
+202,2.29,EVO,1:Sale,0,0
+203,52.83,TSYS,1:Sale,0,0
+203,52.83,First Data,1:Sale,0,0
+203,52.83,EVO,1:Sale,0,0
+204,43.38,TSYS,1:Sale,0,0
+204,43.38,First Data,1:Sale,0,0
+204,43.38,EVO,1:Sale,0,0
+205,64.49,TSYS,1:Sale,0,0
+205,64.49,First Data,1:Sale,0,0
+205,64.49,EVO,1:Sale,0,0
+206,60.78,TSYS,1:Sale,0,0
+206,60.78,First Data,1:Sale,0,0
+206,60.78,EVO,1:Sale,0,0
+207,59.60,TSYS,1:Sale,0,0
+207,59.60,First Data,1:Sale,0,0
+207,59.60,EVO,1:Sale,0,0
+208,8.06,TSYS,1:Sale,0,0
+208,8.06,First Data,1:Sale,0,0
+208,8.06,EVO,1:Sale,0,0
+209,90.15,TSYS,1:Sale,0,0
+209,90.15,First Data,1:Sale,0,0
+209,90.15,EVO,1:Sale,0,0
+210,41.38,TSYS,1:Sale,0,0
+210,41.38,First Data,1:Sale,0,0
+210,41.38,EVO,1:Sale,0,0
+211,63.65,TSYS,1:Sale,0,0
+211,63.65,First Data,1:Sale,0,0
+211,63.65,EVO,1:Sale,0,0
+212,51.10,TSYS,1:Sale,0,0
+212,51.10,First Data,1:Sale,0,0
+212,51.10,EVO,1:Sale,0,0
+213,14.98,TSYS,1:Sale,0,0
+213,14.98,First Data,1:Sale,0,0
+213,14.98,EVO,1:Sale,0,0
+214,9.45,TSYS,1:Sale,0,0
+214,9.45,First Data,1:Sale,0,0
+214,9.45,EVO,1:Sale,0,0
+215,22.81,TSYS,1:Sale,0,0
+215,22.81,First Data,1:Sale,0,0
+215,22.81,EVO,1:Sale,0,0
+216,50.48,TSYS,1:Sale,0,0
+216,50.48,First Data,1:Sale,0,0
+216,50.48,EVO,1:Sale,0,0
+217,89.54,TSYS,1:Sale,0,0
+217,89.54,First Data,1:Sale,0,0
+217,89.54,EVO,1:Sale,0,0
+218,71.97,TSYS,1:Sale,0,0
+218,71.97,First Data,1:Sale,0,0
+218,71.97,EVO,1:Sale,0,0
+219,44.35,TSYS,1:Sale,0,0
+219,44.35,First Data,1:Sale,0,0
+219,44.35,EVO,1:Sale,0,0
+220,54.17,TSYS,1:Sale,0,0
+220,54.17,First Data,1:Sale,0,0
+220,54.17,EVO,1:Sale,0,0
+221,99.37,TSYS,1:Sale,0,0
+221,99.37,First Data,1:Sale,0,0
+221,99.37,EVO,1:Sale,0,0
+222,1.97,TSYS,1:Sale,0,0
+222,1.97,First Data,1:Sale,0,0
+222,1.97,EVO,1:Sale,0,0
+223,44.41,TSYS,1:Sale,0,0
+223,44.41,First Data,1:Sale,0,0
+223,44.41,EVO,1:Sale,0,0
+224,45.21,TSYS,1:Sale,0,0
+224,45.21,First Data,1:Sale,0,0
+224,45.21,EVO,1:Sale,0,0
+225,56.28,TSYS,1:Sale,0,0
+225,56.28,First Data,1:Sale,0,0
+225,56.28,EVO,1:Sale,0,0
+226,5.22,TSYS,1:Sale,0,0
+226,5.22,First Data,1:Sale,0,0
+226,5.22,EVO,1:Sale,0,0
+229,18.72,TSYS,1:Sale,0,0
+229,18.72,First Data,1:Sale,0,0
+229,18.72,EVO,1:Sale,0,0
+230,84.31,TSYS,1:Sale,0,0
+230,84.31,First Data,1:Sale,0,0
+230,84.31,EVO,1:Sale,0,0
+231,34.99,TSYS,1:Sale,0,0
+231,34.99,First Data,1:Sale,0,0
+231,34.99,EVO,1:Sale,0,0
+232,51.56,TSYS,1:Sale,0,0
+232,51.56,First Data,1:Sale,0,0
+232,51.56,EVO,1:Sale,0,0
+233,3.64,TSYS,1:Sale,0,0
+233,3.64,First Data,1:Sale,0,0
+233,3.64,EVO,1:Sale,0,0
+234,31.83,TSYS,1:Sale,0,0
+234,31.83,First Data,1:Sale,0,0
+234,31.83,EVO,1:Sale,0,0
+235,30.52,TSYS,1:Sale,0,0
+235,30.52,First Data,1:Sale,0,0
+235,30.52,EVO,1:Sale,0,0
+236,42.55,TSYS,1:Sale,0,0
+236,42.55,First Data,1:Sale,0,0
+236,42.55,EVO,1:Sale,0,0
+237,41.10,TSYS,1:Sale,0,0
+237,41.10,First Data,1:Sale,0,0
+237,41.10,EVO,1:Sale,0,0
+238,72.62,TSYS,1:Sale,0,0
+238,72.62,First Data,1:Sale,0,0
+238,72.62,EVO,1:Sale,0,0
+239,92.64,TSYS,1:Sale,0,0
+239,92.64,First Data,1:Sale,0,0
+239,92.64,EVO,1:Sale,0,0
+240,57.68,TSYS,1:Sale,0,0
+240,57.68,First Data,1:Sale,0,0
+240,57.68,EVO,1:Sale,0,0
+241,88.59,TSYS,1:Sale,0,0
+241,88.59,First Data,1:Sale,0,0
+241,88.59,EVO,1:Sale,0,0
+242,33.72,TSYS,1:Sale,0,0
+242,33.72,First Data,1:Sale,0,0
+242,33.72,EVO,1:Sale,0,0
+243,58.27,TSYS,1:Sale,0,0
+243,58.27,First Data,1:Sale,0,0
+243,58.27,EVO,1:Sale,0,0
+244,21.70,TSYS,1:Sale,0,0
+244,21.70,First Data,1:Sale,0,0
+244,21.70,EVO,1:Sale,0,0
+245,51.91,TSYS,1:Sale,0,0
+245,51.91,First Data,1:Sale,0,0
+245,51.91,EVO,1:Sale,0,0
+246,83.58,TSYS,1:Sale,0,0
+246,83.58,First Data,1:Sale,0,0
+246,83.58,EVO,1:Sale,0,0
+247,79.90,TSYS,1:Sale,0,0
+247,79.90,First Data,1:Sale,0,0
+247,79.90,EVO,1:Sale,0,0
+248,58.37,TSYS,1:Sale,0,0
+248,58.37,First Data,1:Sale,0,0
+248,58.37,EVO,1:Sale,0,0
+249,28.61,TSYS,1:Sale,0,0
+249,28.61,First Data,1:Sale,0,0
+249,28.61,EVO,1:Sale,0,0
+250,64.57,TSYS,1:Sale,0,0
+250,64.57,First Data,1:Sale,0,0
+250,64.57,EVO,1:Sale,0,0
+251,51.01,TSYS,1:Sale,0,0
+251,51.01,First Data,1:Sale,0,0
+251,51.01,EVO,1:Sale,0,0
+252,38.41,TSYS,1:Sale,0,0
+252,38.41,First Data,1:Sale,0,0
+252,38.41,EVO,1:Sale,0,0
+253,43.18,TSYS,1:Sale,0,0
+253,43.18,First Data,1:Sale,0,0
+253,43.18,EVO,1:Sale,0,0
+254,78.23,TSYS,1:Sale,0,0
+254,78.23,First Data,1:Sale,0,0
+254,78.23,EVO,1:Sale,0,0
+255,21.34,TSYS,1:Sale,0,0
+255,21.34,First Data,1:Sale,0,0
+255,21.34,EVO,1:Sale,0,0
+256,50.12,TSYS,1:Sale,0,0
+256,50.12,First Data,1:Sale,0,0
+256,50.12,EVO,1:Sale,0,0
+257,38.36,TSYS,1:Sale,0,0
+257,38.36,First Data,1:Sale,0,0
+257,38.36,EVO,1:Sale,0,0
+258,99.26,TSYS,1:Sale,0,0
+258,99.26,First Data,1:Sale,0,0
+258,99.26,EVO,1:Sale,0,0
+259,86.07,TSYS,1:Sale,0,0
+259,86.07,First Data,1:Sale,0,0
+259,86.07,EVO,1:Sale,0,0
+260,79.56,TSYS,1:Sale,0,0
+260,79.56,First Data,1:Sale,0,0
+260,79.56,EVO,1:Sale,0,0
+261,1.88,TSYS,1:Sale,0,0
+261,1.88,First Data,1:Sale,0,0
+261,1.88,EVO,1:Sale,0,0
+263,70.18,TSYS,1:Sale,0,0
+263,70.18,First Data,1:Sale,0,0
+263,70.18,EVO,1:Sale,0,0
+264,35.98,TSYS,1:Sale,0,0
+264,35.98,First Data,1:Sale,0,0
+264,35.98,EVO,1:Sale,0,0
+265,77.16,TSYS,1:Sale,0,0
+265,77.16,First Data,1:Sale,0,0
+265,77.16,EVO,1:Sale,0,0
+266,83.45,TSYS,1:Sale,0,0
+266,83.45,First Data,1:Sale,0,0
+266,83.45,EVO,1:Sale,0,0
+267,86.50,TSYS,1:Sale,0,0
+267,86.50,First Data,1:Sale,0,0
+267,86.50,EVO,1:Sale,0,0
+268,34.28,TSYS,1:Sale,0,0
+268,34.28,First Data,1:Sale,0,0
+268,34.28,EVO,1:Sale,0,0
+269,63.50,TSYS,1:Sale,0,0
+269,63.50,First Data,1:Sale,0,0
+269,63.50,EVO,1:Sale,0,0
+270,19.76,TSYS,1:Sale,0,0
+270,19.76,First Data,1:Sale,0,0
+270,19.76,EVO,1:Sale,0,0
+271,6.82,TSYS,1:Sale,0,0
+271,6.82,First Data,1:Sale,0,0
+271,6.82,EVO,1:Sale,0,0
+272,61.57,TSYS,1:Sale,0,0
+272,61.57,First Data,1:Sale,0,0
+272,61.57,EVO,1:Sale,0,0
+273,60.37,TSYS,1:Sale,0,0
+273,60.37,First Data,1:Sale,0,0
+273,60.37,EVO,1:Sale,0,0
+274,61.30,TSYS,1:Sale,0,0
+274,61.30,First Data,1:Sale,0,0
+274,61.30,EVO,1:Sale,0,0
+275,9.61,TSYS,1:Sale,0,0
+275,9.61,First Data,1:Sale,0,0
+275,9.61,EVO,1:Sale,0,0
+276,58.99,TSYS,1:Sale,0,0
+276,58.99,First Data,1:Sale,0,0
+276,58.99,EVO,1:Sale,0,0
+277,45.75,TSYS,1:Sale,0,0
+277,45.75,First Data,1:Sale,0,0
+277,45.75,EVO,1:Sale,0,0
+278,23.31,TSYS,1:Sale,0,0
+278,23.31,First Data,1:Sale,0,0
+278,23.31,EVO,1:Sale,0,0
+279,1.69,TSYS,1:Sale,0,0
+279,1.69,First Data,1:Sale,0,0
+279,1.69,EVO,1:Sale,0,0
+281,58.39,TSYS,1:Sale,0,0
+281,58.39,First Data,1:Sale,0,0
+281,58.39,EVO,1:Sale,0,0
+282,63.09,TSYS,1:Sale,0,0
+282,63.09,First Data,1:Sale,0,0
+282,63.09,EVO,1:Sale,0,0
+283,70.38,TSYS,1:Sale,0,0
+283,70.38,First Data,1:Sale,0,0
+283,70.38,EVO,1:Sale,0,0
+284,73.53,TSYS,1:Sale,0,0
+284,73.53,First Data,1:Sale,0,0
+284,73.53,EVO,1:Sale,0,0
+285,91.93,TSYS,1:Sale,0,0
+285,91.93,First Data,1:Sale,0,0
+285,91.93,EVO,1:Sale,0,0
+286,6.45,TSYS,1:Sale,0,0
+286,6.45,First Data,1:Sale,0,0
+286,6.45,EVO,1:Sale,0,0
+287,40.38,TSYS,1:Sale,0,0
+287,40.38,First Data,1:Sale,0,0
+287,40.38,EVO,1:Sale,0,0
+288,17.35,TSYS,1:Sale,0,0
+288,17.35,First Data,1:Sale,0,0
+288,17.35,EVO,1:Sale,0,0
+289,53.41,TSYS,1:Sale,0,0
+289,53.41,First Data,1:Sale,0,0
+289,53.41,EVO,1:Sale,0,0
+290,35.52,TSYS,1:Sale,0,0
+290,35.52,First Data,1:Sale,0,0
+290,35.52,EVO,1:Sale,0,0
+291,23.69,TSYS,1:Sale,0,0
+291,23.69,First Data,1:Sale,0,0
+291,23.69,EVO,1:Sale,0,0
+292,7.47,TSYS,1:Sale,0,0
+292,7.47,First Data,1:Sale,0,0
+292,7.47,EVO,1:Sale,0,0
+293,99.26,TSYS,1:Sale,0,0
+293,99.26,First Data,1:Sale,0,0
+293,99.26,EVO,1:Sale,0,0
+294,66.84,TSYS,1:Sale,0,0
+294,66.84,First Data,1:Sale,0,0
+294,66.84,EVO,1:Sale,0,0
+295,5.40,TSYS,1:Sale,0,0
+295,5.40,First Data,1:Sale,0,0
+295,5.40,EVO,1:Sale,0,0
+296,60.41,TSYS,1:Sale,0,0
+296,60.41,First Data,1:Sale,0,0
+296,60.41,EVO,1:Sale,0,0
+297,46.48,TSYS,1:Sale,0,0
+297,46.48,First Data,1:Sale,0,0
+297,46.48,EVO,1:Sale,0,0
+298,61.76,TSYS,1:Sale,0,0
+298,61.76,First Data,1:Sale,0,0
+298,61.76,EVO,1:Sale,0,0
+299,74.70,TSYS,1:Sale,0,0
+299,74.70,First Data,1:Sale,0,0
+299,74.70,EVO,1:Sale,0,0
+300,83.87,TSYS,1:Sale,0,0
+300,83.87,First Data,1:Sale,0,0
+300,83.87,EVO,1:Sale,0,0
+301,71.69,TSYS,1:Sale,0,0
+301,71.69,First Data,1:Sale,0,0
+301,71.69,EVO,1:Sale,0,0
+302,73.60,TSYS,1:Sale,0,0
+302,73.60,First Data,1:Sale,0,0
+302,73.60,EVO,1:Sale,0,0
+303,44.19,TSYS,1:Sale,0,0
+303,44.19,First Data,1:Sale,0,0
+303,44.19,EVO,1:Sale,0,0
+304,72.52,TSYS,1:Sale,0,0
+304,72.52,First Data,1:Sale,0,0
+304,72.52,EVO,1:Sale,0,0
+305,13.68,TSYS,1:Sale,0,0
+305,13.68,First Data,1:Sale,0,0
+305,13.68,EVO,1:Sale,0,0
+306,20.63,TSYS,1:Sale,0,0
+306,20.63,First Data,1:Sale,0,0
+306,20.63,EVO,1:Sale,0,0
+307,35.85,TSYS,1:Sale,0,0
+307,35.85,First Data,1:Sale,0,0
+307,35.85,EVO,1:Sale,0,0
+308,39.33,TSYS,1:Sale,0,0
+308,39.33,First Data,1:Sale,0,0
+308,39.33,EVO,1:Sale,0,0
+309,74.78,TSYS,1:Sale,0,0
+309,74.78,First Data,1:Sale,0,0
+309,74.78,EVO,1:Sale,0,0
+310,49.10,TSYS,1:Sale,0,0
+310,49.10,First Data,1:Sale,0,0
+310,49.10,EVO,1:Sale,0,0
+311,91.43,TSYS,1:Sale,0,0
+311,91.43,First Data,1:Sale,0,0
+311,91.43,EVO,1:Sale,0,0
+312,78.93,TSYS,1:Sale,0,0
+312,78.93,First Data,1:Sale,0,0
+312,78.93,EVO,1:Sale,0,0
+313,67.51,TSYS,1:Sale,0,0
+313,67.51,First Data,1:Sale,0,0
+313,67.51,EVO,1:Sale,0,0
+314,57.42,TSYS,1:Sale,0,0
+314,57.42,First Data,1:Sale,0,0
+314,57.42,EVO,1:Sale,0,0
+315,33.33,TSYS,1:Sale,0,0
+315,33.33,First Data,1:Sale,0,0
+315,33.33,EVO,1:Sale,0,0
+316,14.93,TSYS,1:Sale,0,0
+316,14.93,First Data,1:Sale,0,0
+316,14.93,EVO,1:Sale,0,0
+317,45.51,TSYS,1:Sale,0,0
+317,45.51,First Data,1:Sale,0,0
+317,45.51,EVO,1:Sale,0,0
+319,8.55,TSYS,1:Sale,0,0
+319,8.55,First Data,1:Sale,0,0
+319,8.55,EVO,1:Sale,0,0
+320,53.05,TSYS,1:Sale,0,0
+320,53.05,First Data,1:Sale,0,0
+320,53.05,EVO,1:Sale,0,0
+321,24.27,TSYS,1:Sale,0,0
+321,24.27,First Data,1:Sale,0,0
+321,24.27,EVO,1:Sale,0,0
+322,47.96,TSYS,1:Sale,0,0
+322,47.96,First Data,1:Sale,0,0
+322,47.96,EVO,1:Sale,0,0
+323,9.61,TSYS,1:Sale,0,0
+323,9.61,First Data,1:Sale,0,0
+323,9.61,EVO,1:Sale,0,0
+324,72.10,TSYS,1:Sale,0,0
+324,72.10,First Data,1:Sale,0,0
+324,72.10,EVO,1:Sale,0,0
+325,92.35,TSYS,1:Sale,0,0
+325,92.35,First Data,1:Sale,0,0
+325,92.35,EVO,1:Sale,0,0
+326,26.47,TSYS,1:Sale,0,0
+326,26.47,First Data,1:Sale,0,0
+326,26.47,EVO,1:Sale,0,0
+327,25.74,TSYS,1:Sale,0,0
+327,25.74,First Data,1:Sale,0,0
+327,25.74,EVO,1:Sale,0,0
+330,30.75,TSYS,1:Sale,0,0
+330,30.75,First Data,1:Sale,0,0
+330,30.75,EVO,1:Sale,0,0
+331,14.24,TSYS,1:Sale,0,0
+331,14.24,First Data,1:Sale,0,0
+331,14.24,EVO,1:Sale,0,0
+332,36.12,TSYS,1:Sale,0,0
+332,36.12,First Data,1:Sale,0,0
+332,36.12,EVO,1:Sale,0,0
+333,13.71,TSYS,1:Sale,0,0
+333,13.71,First Data,1:Sale,0,0
+333,13.71,EVO,1:Sale,0,0
+334,15.35,TSYS,1:Sale,0,0
+334,15.35,First Data,1:Sale,0,0
+334,15.35,EVO,1:Sale,0,0
+335,22.51,TSYS,1:Sale,0,0
+335,22.51,First Data,1:Sale,0,0
+335,22.51,EVO,1:Sale,0,0
+336,79.14,TSYS,1:Sale,0,0
+336,79.14,First Data,1:Sale,0,0
+336,79.14,EVO,1:Sale,0,0
+337,70.60,TSYS,1:Sale,0,0
+337,70.60,First Data,1:Sale,0,0
+337,70.60,EVO,1:Sale,0,0
+338,79.80,TSYS,1:Sale,0,0
+338,79.80,First Data,1:Sale,0,0
+338,79.80,EVO,1:Sale,0,0
+339,8.39,TSYS,1:Sale,0,0
+339,8.39,First Data,1:Sale,0,0
+339,8.39,EVO,1:Sale,0,0
+340,72.36,TSYS,1:Sale,0,0
+340,72.36,First Data,1:Sale,0,0
+340,72.36,EVO,1:Sale,0,0
+341,83.06,TSYS,1:Sale,0,0
+341,83.06,First Data,1:Sale,0,0
+341,83.06,EVO,1:Sale,0,0
+342,52.14,TSYS,1:Sale,0,0
+342,52.14,First Data,1:Sale,0,0
+342,52.14,EVO,1:Sale,0,0
+343,10.53,TSYS,1:Sale,0,0
+343,10.53,First Data,1:Sale,0,0
+343,10.53,EVO,1:Sale,0,0
+344,63.05,TSYS,1:Sale,0,0
+344,63.05,First Data,1:Sale,0,0
+344,63.05,EVO,1:Sale,0,0
+345,29.06,TSYS,1:Sale,0,0
+345,29.06,First Data,1:Sale,0,0
+345,29.06,EVO,1:Sale,0,0
+346,83.51,TSYS,1:Sale,0,0
+346,83.51,First Data,1:Sale,0,0
+346,83.51,EVO,1:Sale,0,0
+347,20.75,TSYS,1:Sale,0,0
+347,20.75,First Data,1:Sale,0,0
+347,20.75,EVO,1:Sale,0,0
+348,41.96,TSYS,1:Sale,0,0
+348,41.96,First Data,1:Sale,0,0
+348,41.96,EVO,1:Sale,0,0
+349,87.57,TSYS,1:Sale,0,0
+349,87.57,First Data,1:Sale,0,0
+349,87.57,EVO,1:Sale,0,0
+350,11.68,TSYS,1:Sale,0,0
+350,11.68,First Data,1:Sale,0,0
+350,11.68,EVO,1:Sale,0,0
+351,1.52,TSYS,1:Sale,0,0
+351,1.52,First Data,1:Sale,0,0
+351,1.52,EVO,1:Sale,0,0
+353,38.07,TSYS,1:Sale,0,0
+353,38.07,First Data,1:Sale,0,0
+353,38.07,EVO,1:Sale,0,0
+354,51.21,TSYS,1:Sale,0,0
+354,51.21,First Data,1:Sale,0,0
+354,51.21,EVO,1:Sale,0,0
+355,94.83,TSYS,1:Sale,0,0
+355,94.83,First Data,1:Sale,0,0
+355,94.83,EVO,1:Sale,0,0
+356,72.89,TSYS,1:Sale,0,0
+356,72.89,First Data,1:Sale,0,0
+356,72.89,EVO,1:Sale,0,0
+357,89.15,TSYS,1:Sale,0,0
+357,89.15,First Data,1:Sale,0,0
+357,89.15,EVO,1:Sale,0,0
+358,33.20,TSYS,1:Sale,0,0
+358,33.20,First Data,1:Sale,0,0
+358,33.20,EVO,1:Sale,0,0
+359,84.55,TSYS,1:Sale,0,0
+359,84.55,First Data,1:Sale,0,0
+359,84.55,EVO,1:Sale,0,0
+360,17.93,TSYS,1:Sale,0,0
+360,17.93,First Data,1:Sale,0,0
+360,17.93,EVO,1:Sale,0,0
+361,96.89,TSYS,1:Sale,0,0
+361,96.89,First Data,1:Sale,0,0
+361,96.89,EVO,1:Sale,0,0
+362,97.39,TSYS,1:Sale,0,0
+362,97.39,First Data,1:Sale,0,0
+362,97.39,EVO,1:Sale,0,0
+363,35.42,TSYS,1:Sale,0,0
+363,35.42,First Data,1:Sale,0,0
+363,35.42,EVO,1:Sale,0,0
+364,86.41,TSYS,1:Sale,0,0
+364,86.41,First Data,1:Sale,0,0
+364,86.41,EVO,1:Sale,0,0

@@ -6,6 +6,7 @@ using System.Linq;
 using Datacap.Models.DTO_Models;
 using Microsoft.Extensions.Logging;
 using System;
+using Datacap.Services;
 
 namespace Datacap.Repositories
 {
@@ -14,9 +15,12 @@ namespace Datacap.Repositories
         private List<TransactionDTO> transactions = new List<TransactionDTO>();
         private readonly ILogger<InMemoryTransactionRepository> _logger;
 
-        public InMemoryTransactionRepository(ILogger<InMemoryTransactionRepository> logger)
+        private readonly FileService _fileService;
+
+        public InMemoryTransactionRepository(ILogger<InMemoryTransactionRepository> logger, FileService fileService)
         {
             _logger = logger;
+            _fileService = fileService;
         }
 
         // Mostly for debugging but if you ever want to see the repository :)
@@ -56,6 +60,29 @@ namespace Datacap.Repositories
             }
             return transaction;
         }
+        public void SaveToFile(string filePath)
+        {
+            _fileService.SaveTransactionsToFile(transactions, filePath);
+        }
+        public void LoadFromFile(string filePath)
+        {
+            transactions = _fileService.LoadTransactionsFromFile(filePath);
+        }
+        public void RemoveTransaction(int transactionID)
+        {
+            _logger.LogInformation($"Removing transaction with ID {transactionID} from repository");
+            var transactionToRemove = transactions.FirstOrDefault(t => t.TransactionID == transactionID);
+            if (transactionToRemove != null)
+            {
+                transactions.Remove(transactionToRemove);
+                _logger.LogInformation($"Removed transaction with ID {transactionID} from repository");
+            }
+            else
+            {
+                _logger.LogWarning($"No transaction with ID {transactionID} found in repository");
+            }
+        }
+
     }
 }
 

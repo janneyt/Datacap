@@ -11,5 +11,8 @@ namespace Datacap.Repositories
 
         TransactionDTO GetTransaction(int transactionID);
         void PrintRepository();
+        void SaveToFile(string filePath);
+        void LoadFromFile(string filePath);
+        void RemoveTransaction(int transactionID);
     }
 }

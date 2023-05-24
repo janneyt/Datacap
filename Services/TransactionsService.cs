@@ -123,6 +123,13 @@ namespace Datacap.Services
             // Get all "tran" elements from the file
             var transactionsXml = await _fileService.GetXmlElementsFromFileAsync(fileName, "tran");
             _transactionsRepository.PrintRepository();
+
+            // Only Void transactions need to reload from the file, so this check is only needed here.
+            if (isVoidTransaction)
+            {
+                // Load from the File IO system hopefully saved to below
+                _transactionsRepository.LoadFromFile("transactions.txt");
+            }
             // Process each transaction
             foreach (var xml in transactionsXml)
             {
@@ -130,17 +137,23 @@ namespace Datacap.Services
 
                 if (isVoidTransaction)
                 {
+                    var oldLength = _transactionsRepository.GetTransactions().Count;
                     foreach (var processor in _defaultProcessors)
                     {
                         var transaction = _transactionsRepository.GetTransaction(transactionId);
-                        Console.WriteLine($"Unsaved transaction {transaction}");
+
 
                         if (transaction != null)
                         {
+                            Console.WriteLine($"Removing transaction {transaction}");
                             processor.Transactions.Remove(transaction);
+                            _transactionsRepository.RemoveTransaction(transactionId);
                             _processorService.CalculateTotalFee(processor);
                         }
                     }
+                    _transactionsRepository.SaveToFile("transactions.txt");
+                    var newLength = _transactionsRepository.GetTransactions().Count;
+                        Console.WriteLine($"Different in length{oldLength-newLength}");
                 }
                 else
                 {
@@ -149,6 +162,18 @@ namespace Datacap.Services
                     {
                         AddTransactionFromXml(xml, processor);
                     }
+
+                    // Save to FileIO system
+                    _transactionsRepository.SaveToFile("transactions.txt");
+                }
+            }
+
+            // Why repeat the void transaction check? Because I don't want to recalculate the totals every time, just once all processing is done
+            if (isVoidTransaction)
+            {
+                foreach(var processor in _defaultProcessors)
+                {
+                    _processorService.CalculateTotalFee(processor);
                 }
             }
             // Rank processors based on total fee after processing the transactions
