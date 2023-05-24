@@ -37,6 +37,11 @@ namespace Datacap.Services
             return new StreamReader(fileStream);
         }
 
+        /// <summary>
+        /// Formats a TransactionDTO to save to a file (or other data storage)
+        /// </summary>
+        /// <param name="transaction"></param>
+        /// <returns></returns>
         public static string TransactionDTOToString(TransactionDTO transaction)
         {
             var stringBuilder = new StringBuilder();
@@ -55,6 +60,11 @@ namespace Datacap.Services
             return stringBuilder.ToString();
         }
 
+        /// <summary>
+        /// Takes a string and converts to a TransactionDTO. For use with reading from files
+        /// </summary>
+        /// <param name="transactionString"></param>
+        /// <returns></returns>
         public static TransactionDTO StringToTransactionDTO(string transactionString)
         {
             var parts = transactionString.Split(",");
@@ -71,16 +81,25 @@ namespace Datacap.Services
         }
 
 
-
+        /// <summary>
+        /// Saves a list of transactions to a file. Different from the XML because nodes and such have been stripped away, we're dealing with Transaction DTOs
+        /// </summary>
+        /// <param name="transactions"></param>
+        /// <param name="filePath"></param>
         public void SaveTransactionsToFile(List<TransactionDTO> transactions, string filePath)
         {
-            _logger.LogInformation($"Saving transactions to file {filePath}");
+
             var transactionStrings = transactions.Select(TransactionDTOToString).ToList();
             File.WriteAllLines(filePath, transactionStrings);
-            _logger.LogInformation($"Saved transactions to file {filePath}");
+
         }
 
-
+        /// <summary>
+        /// XML reader that manually takes XML elements out of the file and converts to Transaction DTOs
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="elementName"></param>
+        /// <returns></returns>
         public async Task<IEnumerable<XElement>> GetXmlElementsFromFileAsync(string filePath, string elementName)
         {
             var elements = new List<XElement>();
@@ -105,12 +124,18 @@ namespace Datacap.Services
 
             return elements;
         }
+
+        /// <summary>
+        /// Opens a file and converts to DTO. Used mostly with the void transactions service
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
         public List<TransactionDTO> LoadTransactionsFromFile(string filePath)
         {
-            _logger.LogInformation($"Loading transactions from file {filePath}");
+
             var transactionStrings = File.ReadAllLines(filePath);
             var transactions = transactionStrings.Select(StringToTransactionDTO).ToList();
-            _logger.LogInformation($"Loaded transactions from file {filePath}");
+
             return transactions;
         }
 

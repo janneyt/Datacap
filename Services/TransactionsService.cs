@@ -116,6 +116,7 @@ namespace Datacap.Services
 
         public async Task ProcessTransactionsAsync(bool isVoidTransaction)
         {
+            // Probably not needed but I was trying to fix a bug with the repository going out of scope
             using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
             {
             var fileName = isVoidTransaction ? _filePaths.Transactions_Voids : _filePaths.Transactions_Sales;

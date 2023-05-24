@@ -6,6 +6,13 @@ using FluentValidation.Results;
 
 public class ProcessorRankingService
 {
+
+    /// <summary>
+    /// Helper and validator method for lists of Processors
+    /// </summary>
+    /// <param name="processors"></param>
+    /// <param name="processorValidationResults"></param>
+    /// <returns></returns>
     private bool AreProcessorsValid(List<ProcessorDTO> processors, out List<ValidationResult> processorValidationResults)
     {
         var processorValidator = new ProcessorDTOValidator();
@@ -14,6 +21,11 @@ public class ProcessorRankingService
         return processorValidationResults.All(result => result.IsValid);
     }
 
+    /// <summary>
+    /// Calculates the Rank per processor
+    /// </summary>
+    /// <param name="processors"></param>
+    /// <returns></returns>
     public List<RankingDTO> RankProcessors(List<ProcessorDTO> processors)
     {
         List<ValidationResult> processorValidationResults;

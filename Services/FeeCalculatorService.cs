@@ -24,6 +24,12 @@ public class FeeCalculator
         return transactionValidationResult.IsValid && feeRuleValidationResults.All(result => result.IsValid);
     }
 
+    /// <summary>
+    /// Calculates the fees. You'll notice it's a duplicate method, I ran out of time to further modularize
+    /// </summary>
+    /// <param name="transaction"></param>
+    /// <returns></returns>
+    /// <exception cref="ValidationException"></exception>
     public decimal CalculateFee(TransactionDTO transaction)
     {
         ValidationResult transactionValidationResult;
